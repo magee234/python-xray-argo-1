@@ -18,18 +18,18 @@ PROJECT_URL = os.environ.get('PROJECT_URL', '')        # 项目url,需要自动�
 AUTO_ACCESS = os.environ.get('AUTO_ACCESS', 'false').lower() == 'true'  # false关闭自动保活, true开启自动保活，默认关闭
 FILE_PATH = os.environ.get('FILE_PATH', './.cache')    # 运行路径,sub.txt保存路径
 SUB_PATH = os.environ.get('SUB_PATH', 'sub')           # 订阅token,默认sub，例如：https://www.google.com/sub
-UUID = os.environ.get('UUID', '8283c49c-db1e-4323-9598-ece83e991583')  # UUID,如使用哪吒v1,在不同的平台部署需要修改,否则会覆盖
+UUID = os.environ.get('UUID', 'ab427c03-f868-43d0-81ef-4f4d31365a75')  # UUID,如使用哪吒v1,在不同的平台部署需要修改,否则会覆盖
 NEZHA_SERVER = os.environ.get('NEZHA_SERVER', '')      # 哪吒面板域名或ip, v1格式: nezha.xxx.com:8008, v0格式: nezha.xxx.com
 NEZHA_PORT = os.environ.get('NEZHA_PORT', '')          # v1哪吒请留空, v0哪吒的agent通信端口,自动匹配tls
 NEZHA_KEY = os.environ.get('NEZHA_KEY', '')            # v1哪吒的NZ_CLIENT_SECRET或v0哪吒agent密钥
-ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', 'b4a8001.mmmjheng.pp.ua')        # Argo固定隧道域名,留空即使用临时隧道
-ARGO_AUTH = os.environ.get('ARGO_AUTH', 'eyJhIjoiOWQzZTVmOTUwOWQ4YTJhMTBiNzA1OTBkMWVmNGNmYWIiLCJ0IjoiMWZlNTBjNTktOTJiMi00NjU5LWFhMTUtNjhhNTFkODg3ZTgwIiwicyI6Ik4yWmxNV0k0WVRjdE5UbGpOaTAwWkRCa0xUbGtaakV0TXpRME1tUTNOMkU1TUdJdyJ9')            # Argo固定隧道密钥,留空即使用临时隧道
+ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', 'leaflow2777.11122234.xyz')        # Argo固定隧道域名,留空即使用临时隧道
+ARGO_AUTH = os.environ.get('ARGO_AUTH', 'eyJhIjoiOWQzZTVmOTUwOWQ4YTJhMTBiNzA1OTBkMWVmNGNmYWIiLCJ0IjoiYjNkNGYwZmUtYmVmZi00ZDBiLTljYzgtZGJhNmY3NzViMTUxIiwicyI6IlpqVTBOV00xTnpVdFkyWmpNaTAwTW1NekxXSmlObVV0WXprelptRmhNamt3TnpobCJ9')            # Argo固定隧道密钥,留空即使用临时隧道
 ARGO_PORT = int(os.environ.get('ARGO_PORT', '8001'))   # Argo端口,使用固定隧道token需在cloudflare后台设置端口和这里一致
 CFIP = os.environ.get('CFIP', 'www.visa.com.tw')       # 优选ip或优选域名
 CFPORT = int(os.environ.get('CFPORT', '443'))          # 优选ip或优选域名对应端口
 NAME = os.environ.get('NAME', 'Vls')                   # 节点名称
-CHAT_ID = os.environ.get('CHAT_ID', '')                # Telegram chat_id,推送节点到tg,两个变量同时填写才会推送
-BOT_TOKEN = os.environ.get('BOT_TOKEN', '')            # Telegram bot_token
+CHAT_ID = os.environ.get('CHAT_ID', '6605119688')                # Telegram chat_id,推送节点到tg,两个变量同时填写才会推送
+BOT_TOKEN = os.environ.get('BOT_TOKEN', '7915132234:AAFBeKpjF9AujTLyVj1Ly_F4SSFLPZzf9SQ')            # Telegram bot_token
 PORT = int(os.environ.get('SERVER_PORT') or os.environ.get('PORT') or 3000) # 订阅端口，如无法订阅，请手动修改为分配的端口
 
 # Create running folder
